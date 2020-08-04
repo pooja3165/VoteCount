@@ -1,0 +1,51 @@
+.container{position: absolute;
+
+left: 19%;
+width: 750px;
+height: 1000px;
+border: 2px solid black;}
+table{
+    margin: 28px 20px;
+    border-collapse: collapse;
+   
+}
+thead{
+    background-color: #ff4700cc;
+}
+.iconab td {
+    padding: 3px;
+  }
+  
+
+.iconab tr:nth-child(even){background-color: #f2f2f2;}
+
+.iconab tr:hover {background-color: #ddd;}
+:host /deep/ .ngx-pagination .disabled  {
+    
+        padding: 0.1875rem 0.625rem;
+        color: #de6b47;
+        cursor: default;
+   
+  }
+  
+  :host /deep/ .ngx-pagination  a {
+    
+    padding: 0.1875rem 0.625rem;
+    color:#ff4700cc;
+    cursor: default;
+
+}
+:host /deep/ .ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #ff4700cc;
+    color: #fefefe;
+    cursor: default;
+}
+.pagination-dash{
+    float: right;
+}
+canvas{
+    border-top:2px solid #ff4700cc;
+}
+
+  

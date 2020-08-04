@@ -1,0 +1,35 @@
+<div class="container">
+    <table class="iconab">
+     <thead>
+        <tr class="icon">
+          <th class="col">comments</th>
+          <th class="col">vote Count</th>
+          <th class="col">upVote</th>
+          <th class="col">NewDetails</th>
+        </tr>
+    </thead>
+      <tbody >
+        <tr *ngFor="let msg of messages | paginate: {  itemsPerPage: 17, currentPage: p  }" >
+            <td data-label="Account">{{msg.num_comments}}</td>
+            <td data-label="Due Date">{{msg.points}}</td>
+            <td data-label="Amount">{{msg.author}}</td>
+            <td data-label="Period">{{msg.title}}</td>
+          </tr>
+     </tbody>
+    
+    </table>
+    <div class="pagination-dash">
+      <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+    </div>
+  <div class="chart-wrapper">
+    <canvas baseChart 
+        [datasets]="lineChartData" 
+        [labels]="lineChartLabels" 
+        [options]="lineChartOptions"
+        [colors]="lineChartColors" 
+        [legend]="lineChartLegend" 
+        [chartType]="lineChartType" 
+        [plugins]="lineChartPlugins">
+    </canvas>
+</div>
+</div>
