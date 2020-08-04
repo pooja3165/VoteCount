@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "serve -s dist/my-dream-app",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -25,6 +25,7 @@
     "ng2-pagination": "^2.0.2",
     "ngx-pagination": "^5.0.0",
     "rxjs": "~6.5.5",
+    "serve": "^11.3.2",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
